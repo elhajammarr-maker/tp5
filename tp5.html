@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des etudiants</h1>
+        <h2>Formulaire d inscription</h2>
+        <form id="Formetudiant">
+            <label>nom:</label>
+            <input type="text" id="nom" placeholder=" saisi le nom"><br></br>
+            <label>prenom:</label>
+            <input type="text" id="prenom" placeholder="saisi le prenom"><br></br>
+            <label>Email:</label>
+            <input type="email" id="email" placeholder=" saisir Email"><br></br>
+            <label>Age:</label>
+            <input type="text" id="age" placeholder="saisir Age"><br></br>
+            <button type="submit" id="btnAjouter">Ajouter</button>
+            <button type="reset" id="btnAnnuler" hidden >Annuler</button>
+        </form>
+        <h2>Liste des etudiants</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="listeEtudiante"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
